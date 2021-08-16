@@ -7,7 +7,8 @@ This is the replacement for the same script used for ubuntu 18.04 ([link](https:
 Please note that this script installs the latest versions of cmake and git along with anaconda3 (`Anaconda3-2021.05-Linux-x86_64.sh` to be exact).   
 In my experiments, I noticed having an up-to-date cmake and git solves several issues, so its recommened to install them as well.   
 If you have them installed previously, then nothing will be installed.     
-If you don't like installing anaconda3 or have it installed already, you can choose "no" when it comes to installing anaconda3, and carry on without it.   
+If you don't like installing anaconda3 or have it installed already, you can choose "no" when it comes to installing anaconda3, and carry on without it.  
+And finally your catkin (ROS build system) workspace is created at ~/catkin_ws/.  
 
 # Installation: 
 Simply do :
