@@ -3,13 +3,13 @@ This is an easy installer for installing ROS noetic, PX4 (mavros), gazebo,... on
 Basically this installs ROS(noetic) + Mavros + gazebo and all of the dependencies (Qt, JRE, etc) on ubuntu 20.04.   
 This is the replacement for the same script used for ubuntu 18.04 ([link](https://docs.px4.io/master/en/dev_setup/dev_env_linux_ubuntu.html#ros-gazebo)) updated for ubuntu 20.04 and ros noetic.   
 
-## important note: 
-Please note that this script installs the latest versions of cmake and git along with anaconda3 (3.8.8 to be exact). 
-In my experiments, I noticed having an up-to-date cmake and git solves several issues, so its recommened to install them as well. 
-If you have them installed previously, then nothing will be installed.   
-If you don't like installing anaconda3 or have it installed already, you can choose "no" when it comes to installing anaconda3, and carry on without it. 
+## Important note: 
+Please note that this script installs the latest versions of cmake and git along with anaconda3 (`Anaconda3-2021.05-Linux-x86_64.sh` to be exact).   
+In my experiments, I noticed having an up-to-date cmake and git solves several issues, so its recommened to install them as well.   
+If you have them installed previously, then nothing will be installed.     
+If you don't like installing anaconda3 or have it installed already, you can choose "no" when it comes to installing anaconda3, and carry on without it.   
 
-# installation: 
+# Installation: 
 Simply do :
 ```
 wget https://raw.githubusercontent.com/Coderx7/ros-noetic-PX4-easy-installer/main/ubuntu_sim_ros_noetic.sh
@@ -18,7 +18,7 @@ chmod +x /ubuntu_sim_ros_noetic.sh
 ```
 Follow the on-screen instructions. 
 
-# Note For Iranians users:
+### Note for Iranian users:
 لطفا قبل از اقدام به نصب نسبت به استفاده از یک وی پی ان و تنظیم دی ان اس شکن اقدام کنید تا در فرایند نصب بعلت تحریم با مشکل مواجه نشید
 Before going on any further, in order to circumvent sanctions, set the shecan DNS nameserver so the script doesn't fail: 
 Run:
