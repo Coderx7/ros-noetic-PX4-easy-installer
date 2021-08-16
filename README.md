@@ -4,10 +4,12 @@ Basically this installs ROS(noetic) + Mavros + gazebo and all of the dependencie
 This is the replacement for the same script used for ubuntu 18.04 ([link](https://docs.px4.io/master/en/dev_setup/dev_env_linux_ubuntu.html#ros-gazebo)) updated for ubuntu 20.04 and ros noetic.   
 
 ## Important note: 
-Please note that this script installs the latest versions of cmake and git along with anaconda3 (`Anaconda3-2021.05-Linux-x86_64.sh` to be exact).   
+Please note that this script installs the latest versions of cmake and git along with optional installation of anaconda3 (`Anaconda3-2021.05-Linux-x86_64.sh` to be exact).   
 In my experiments, I noticed having an up-to-date cmake and git solves several issues, so its recommened to install them as well.   
 If you have them installed previously, then nothing will be installed.     
-If you don't like installing anaconda3 or have it installed already, you can choose "no" when it comes to installing anaconda3, and carry on without it.  
+If you don't like installing anaconda3 or have it installed already, you can press Enter or explicitly choose "No" when it comes to installing it, and carry on without it.  
+I recommend going without anaconad3 installed, although having it installed by the script causes no harm, but it might give you headaches down the road in other ros projects. 
+
 And finally your catkin (ROS build system) workspace is created at ~/catkin_ws/.  
 
 # Installation: 
