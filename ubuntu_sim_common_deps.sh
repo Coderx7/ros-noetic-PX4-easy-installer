@@ -29,7 +29,7 @@ sudo apt update
 sudo apt install kitware-archive-keyring
 sudo rm /etc/apt/trusted.gpg.d/kitware.gpg
 sudo apt update
-sudo apt install cmake
+sudo apt install cmake -y
 
 # Installing latest version of git
 echo "Installing latest version of git"
@@ -38,9 +38,12 @@ sudo apt-get update
 sudo apt-get install git -y
 
 # Install anaconda3
-type conda >/dev/null 2>&1 || { echo >&2 "Installing anaconda3 (python 3.8.8)"; wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh; bash ./Anaconda3-2021.05-Linux-x86_64.sh; }
-# source bashrc see https://askubuntu.com/questions/1358131/
-eval "$(cat ~/.bashrc | tail -n +10)"
+read -p "Do you wish to install anaconda3? [default: No]" yn
+    case ${yn:-No} in
+        [Yy]* ) { echo >&2 "Installing anaconda3 (python 3.8.8)"; wget https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh; bash ./Anaconda3-2021.05-Linux-x86_64.sh; eval "$(cat ~/.bashrc | tail -n +10)"; };;
+        [Nn]* ) { echo Using system\'s default python;  sudo apt install python3-dev python3-pip -y; };;
+        * ) echo "Please answer yes or no.";;
+    esac
 
 # Common dependencies
 echo "Installing common dependencies"
