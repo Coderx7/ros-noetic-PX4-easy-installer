@@ -2,9 +2,14 @@
 This is an easy installer for installing ROS noetic, PX4 (mavros), gazebo,... on ubuntu 20.04.
 Basically this installs ROS(noetic) + Mavros + gazebo and all of the dependencies (Qt, JRE, etc) on ubuntu 20.04.   
 This is the replacement for the same script used for ubuntu 18.04 ([link](https://docs.px4.io/master/en/dev_setup/dev_env_linux_ubuntu.html#ros-gazebo)) updated for ubuntu 20.04 and ros noetic.   
-Please note that it also installs anaconda3. (if you don't like this, you can choose "no" when it comes to installing anaconda3, and carry on without it. the rest of the installation should succeed just fine). 
-Also, the latest version of CMake and git are installed (if they are not previously installed). 
 
+## important note: 
+Please note that this script installs the latest versions of cmake and git along with anaconda3 (3.8.8 to be exact). 
+In my experiments, I noticed having an up-to-date cmake and git solves several issues, so its recommened to install them as well. 
+If you have them installed previously, then nothing will be installed.   
+If you don't like installing anaconda3 or have it installed already, you can choose "no" when it comes to installing anaconda3, and carry on without it. 
+
+# installation: 
 Simply do :
 ```
 wget https://raw.githubusercontent.com/Coderx7/ros-noetic-PX4-easy-installer/main/ubuntu_sim_ros_noetic.sh
