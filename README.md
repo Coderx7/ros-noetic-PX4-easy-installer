@@ -12,9 +12,9 @@ If you don't like installing anaconda3 or have it installed already, you can cho
 # Installation: 
 Simply do :
 ```
-wget https://raw.githubusercontent.com/Coderx7/ros-noetic-PX4-easy-installer/main/ubuntu_sim_ros_noetic.sh
-chmod +x /ubuntu_sim_ros_noetic.sh
-./ubuntu_sim_ros_noetic.sh
+wget https://raw.githubusercontent.com/Coderx7/ros-noetic-PX4-easy-installer/main/ubuntu_sim_ros_noetic.sh  
+chmod +x ubuntu_sim_ros_noetic.sh  
+./ubuntu_sim_ros_noetic.sh  
 ```
 Follow the on-screen instructions. 
 
