@@ -5,7 +5,7 @@
 ##
 ## Installs:
 ## - Common dependencies libraries and tools as defined in `ubuntu_sim_common_deps.sh`
-## - ROS Melodic (including Gazebo9)
+## - ROS Noetic (including Gazebo9)
 ## - MAVROS
 
 if [[ $(lsb_release -sc) == *"xenial"* ]]; then
